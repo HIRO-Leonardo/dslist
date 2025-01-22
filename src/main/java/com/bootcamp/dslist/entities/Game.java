@@ -27,7 +27,10 @@ public class Game {
      @Column(columnDefinition = "TEXT")
      private String longDescription;
 
-    public Game(Long id, String title, Integer year, String genre, String plataforms, double score, String imgUrl, String shortDescription, String lonDescription) {
+     public Game(){
+
+     }
+    public Game(Long id, String title, Integer year, String genre, String platforms, double score, String imgUrl, String shortDescription, String longDescription) {
 
 
         this.id = id;
@@ -77,7 +80,7 @@ public class Game {
         return platforms;
     }
 
-    public void setPlatforms(String platfrms) {
+    public void setPlatforms(String platforms) {
         this.platforms = platforms;
     }
 
